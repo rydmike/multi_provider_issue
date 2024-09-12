@@ -23,17 +23,15 @@ linter:
     # We skip the docs comment needs for the issue demo
     public_member_api_docs: false
 
-    # For demo purposes of the issue we keep this rule enabled as it is in
+    # We use parameter_assignments so this is not adding anything useful.
+    avoid_final_parameters: false
+
+    # For this issue demo, we keep this rule enabled as it is in
     # the issue case.
-    #
-    # Conflicts with `omit_local_variable_types` and other rules.
-    # As per Dart guidelines, we want to avoid unnecessary types to make the code
-    # more readable.
-    # See https://dart.dev/guides/language/effective-dart/design#avoid-type-annotating-initialized-local-variables
     # always_specify_types: false
 
     # Incompatible with `prefer_final_locals`
-    # Having immutable local variables makes larger functions more predictible
+    # Having immutable local variables makes larger functions more predictable,
     # so we will use `prefer_final_locals` instead.
     unnecessary_final: false
 
