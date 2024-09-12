@@ -23,8 +23,9 @@ linter:
     # We skip the docs comment needs for the issue demo
     public_member_api_docs: false
 
-    # We use parameter_assignments so this is not adding anything useful.
+    # We use parameter_assignments so we skip forcing either of these
     avoid_final_parameters: false
+    prefer_final_parameters: false
 
     # For this issue demo, we keep this rule enabled as it is in
     # the issue case.
